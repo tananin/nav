@@ -1,0 +1,30 @@
+[[-
+-------------------------------------------------------------------------------------------------------
+Навигация / Меню
+-------------------------------------------------------------------------------------------------------
+
+
+<!--Гланое, простое меню -->
+[[pdoMenu?
+&level=`1`
+&parents=`0`
+&limit=`7`
+&firstClass=``
+&lastClass=``
+&hereClass=`active`
+&rowClass=``
+&tplOuter=`@INLINE <table><tr>[[+wrapper]]</tr></table>`
+&tpl=`@INLINE <td class="leaf"><a href="[[+link]]" [[+attributes]] [[+classes]]>[[+menutitle]]</a></td>[[+wrapper]]`
+]]
+
+<!-- Меню с подсчётам кол-ва дочерних элементов -->
+[[pdoMenu?
+&level=`1`
+&parents=`11`
+&resources=``
+&showHidden=`1`
+&showUnpublished=`1`
+&tpl=`@INLINE <div class="views-row"><div class="views-field views-field-tid"><span class="field-content"><a href="[[+link]]"></a></span></div><div class="views-field views-field-nid"><span class="field-content">[[+children]]</span></div><div class="views-field views-field-name"><span class="field-content"><a href="[[+link]]">[[+menutitle]]<span class="arrow"></span></a></span></div><div class="views-field views-field-nothing"><span class="field-content">[[+children]]</span></div></div>[[+wrapper]]`
+&countChildren=`1`
+]]
+]]
