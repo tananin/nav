@@ -28,3 +28,18 @@
 &countChildren=`1`
 ]]
 ]]
+
+<!-- Меню выводится только с буквы A -->
+[[pdoMenu?
+&level=`1`
+&parents=`10`
+&firstClass=``
+&lastClass=``
+&hereClass=`active`
+&rowClass=``
+&tplOuter=`@INLINE [[+wrapper]]`
+&where=`{"pagetitle:LIKE":"[[+char]]%"}`
+&tpl=`@INLINE <li><a href="[[+link]]" [[+attributes]] [[+classes]]>[[+menutitle]]</a></li>[[+wrapper]]`
+]]
+<!-- Вызов меню -->
+[[$nav-brand?&char=`a`]]
