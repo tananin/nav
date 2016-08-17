@@ -43,3 +43,19 @@
 ]]
 <!-- Вызов меню -->
 [[$nav-brand?&char=`a`]]
+
+<!-- Двух уровнеовое меню для Foundation -->
+
+[[pdoMenu?
+  &level=`2`
+  &parents=`0`
+  &limit=`0`
+  &firstClass=``
+  &lastClass=``
+  &hereClass=`active`
+  &rowClass=``
+  &tplOuter=`@INLINE <ul data-dropdown-menu="" class="dropdown menu mani-menu">[[+wrapper]]</ul>`
+  &tpl=`@INLINE <li [[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a></li>[[+wrapper]]`
+  &tplParentRow=`@INLINE <li [[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a><ul class="menu vertical">[[+wrapper]]</ul></li>`
+  &tplInner=`@INLINE [[+wrapper]]`
+]]
